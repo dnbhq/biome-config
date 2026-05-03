@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1](https://github.com/dnbhq/biome-config/compare/v0.2.0...v0.2.1) (2026-05-03)
+
+### Bug Fixes
+
+* formatting according to biome ([1329b1b](https://github.com/dnbhq/biome-config/commit/1329b1b8ef9ae880a12fb661bba65863cd2d0acb))
+* proper template strings for version numbers in .release-it.ts ([ddd136f](https://github.com/dnbhq/biome-config/commit/ddd136fc9cee367bb585b7021898093ceac83935))
+
+### Chores
+
+* add lint-staged pre-commit hook ([c192353](https://github.com/dnbhq/biome-config/commit/c192353cad99975ea002b00c594ccde42865d386))
+* **deps:** update dependencies ([90d9dee](https://github.com/dnbhq/biome-config/commit/90d9dee5808340d1c74002447a695687a8e56ebb))
+
 ## 0.2.0 (2026-05-03)
 
 ### Features
