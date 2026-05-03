@@ -6,7 +6,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/dnbhq/biome-config"
+    "url": "git+https://github.com/dnbhq/biome-config.git"
   },
   "bugs": "https://github.com/dnbhq/biome-config/issues",
   "homepage": "https://github.com/dnbhq/biome-config#readme",
@@ -33,8 +33,7 @@
     "LICENSE"
   ],
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "engines": {
     "node": ">=25"
