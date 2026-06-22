@@ -1,5 +1,8 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.14/schema.json",
+	"files": {
+		"includes": ["!build", "!coverage"]
+	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -8,25 +11,27 @@
 		"lineEnding": "lf",
 		"lineWidth": 80,
 		"attributePosition": "auto",
-		"ignore": ["**/build", "**/coverage"],
 		"useEditorconfig": true
 	},
-	"organizeImports": {
-		"enabled": true
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": false,
+			"preset": "none",
 			"performance": {
 				"noBarrelFile": "error",
 				"noReExportAll": "error"
 			},
 			"complexity": {
 				"noExtraBooleanCast": "error",
-				"noMultipleSpacesInRegularExpressionLiterals": "error",
-				"noUselessCatch": "error",
-				"noWith": "error"
+				"noAdjacentSpacesInRegex": "error",
+				"noUselessCatch": "error"
 			},
 			"correctness": {
 				"noConstAssign": "error",
@@ -35,7 +40,7 @@
 				"noEmptyPattern": "error",
 				"noGlobalObjectCalls": "error",
 				"noInvalidConstructorSuper": "error",
-				"noInvalidNewBuiltin": "error",
+				"noInvalidBuiltinInstantiation": "error",
 				"noNonoctalDecimalEscape": "error",
 				"noPrecisionLoss": "error",
 				"noSelfAssign": "error",
@@ -76,8 +81,8 @@
 				"noRedeclare": "error",
 				"noShadowRestrictedNames": "error",
 				"noUnsafeNegation": "error",
-				"useGetterReturn": "error",
-				"useValidTypeof": "error"
+				"noWith": "error",
+				"useGetterReturn": "error"
 			}
 		}
 	},
@@ -196,10 +201,10 @@
 	},
 	"overrides": [
 		{
-			"include": ["*.html"]
+			"includes": ["*.html"]
 		},
 		{
-			"include": ["*.js", "*.ts"],
+			"includes": ["*.js", "*.ts"],
 			"javascript": {
 				"formatter": {
 					"quoteStyle": "single"
@@ -207,7 +212,7 @@
 			}
 		},
 		{
-			"include": ["*.properties"]
+			"includes": ["*.properties"]
 		}
 	],
 	"vcs": {

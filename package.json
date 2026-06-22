@@ -21,7 +21,7 @@
 		"typescript": "6.0.3"
 	},
 	"peerDependencies": {
-		"@biomejs/biome": ">=2.4.0"
+		"@biomejs/biome": ">=2.4.14"
 	},
 	"scripts": {
 		"check": "biome check",

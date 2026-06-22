@@ -1,19 +1,30 @@
 # @dnbhq/biome-config
 
-Shared Biome configuration for DNBHQ projects.
+Shared Biome configuration for @davidsneighbour's projects.
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Available config](#available-config)
-* [Design notes](#design-notes)
-* [Release](#release)
-* [Notes](#notes)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available config](#available-config)
+  - [Strict baseline](#strict-baseline)
+- [Design notes](#design-notes)
+- [Release](#release)
+- [Notes](#notes)
 
 ## Installation
 
 ```bash
 npm install --save-dev @dnbhq/biome-config @biomejs/biome
 ```
+
+## Upgrading Biome
+
+After upgrading `@biomejs/biome` to a new version, run Biome's built-in migration command to update your config automatically:
+
+```bash
+npx @biomejs/biome migrate --write
+```
+
+This rewrites any deprecated or renamed keys in `biome.json` and reports anything that needs manual attention. Run it once per Biome upgrade — no upper-bound pin on the peer dependency is needed because the migration script is the recovery path.
 
 ## Usage
 
@@ -28,7 +39,7 @@ Create or update `biome.json` in the consuming project:
 
 ## Available config
 
-### Strict DNBHQ baseline
+### Strict baseline
 
 The package exports one shared Biome configuration:
 
