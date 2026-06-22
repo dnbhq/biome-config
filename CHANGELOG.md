@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.2](https://github.com/dnbhq/biome-config/compare/v0.2.1...v0.2.2) (2026-06-22)
+
+### Bug Fixes
+
+* migrate config.json to Biome 2.4.14 schema ([6133dc6](https://github.com/dnbhq/biome-config/commit/6133dc605ef122bf2c36526af0a2ad0ec690b3e0))
+
 ## [0.2.1](https://github.com/dnbhq/biome-config/compare/v0.2.0...v0.2.1) (2026-05-03)
 
 ### Bug Fixes
